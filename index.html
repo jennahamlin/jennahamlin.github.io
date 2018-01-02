@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<title>Bernie Michalik's Home Page</title>
+	<title>Jenna Hamlin</title>
 	<link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
 	<meta http-equiv="pragma" content="no-cache" />
 	<meta name="robots" content="all" />
@@ -41,12 +41,17 @@
 
 <!--include jquery & backstretch-->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript" src="jquery.backstretch.js"></script>
+<script type="text/javascript" src="jquery.backstretch.min.js"></script>
 <script type="text/javascript">
-		$.backstretch("jh_bg.JPG", {speed: 150});
+$(function(){
+     $(window).resize(function(){
+         if($(this).width() >= 767){
+             $.backstretch("jh_bg.JPG", {speed: 150});
+         }
+      })
+      .resize();//trigger resize on page load
+});
 </script>
- 
-
 
 <!-- this web site is based on original material found here https://github.com/weightshift/The-Personal-Page -->
 </body>	
