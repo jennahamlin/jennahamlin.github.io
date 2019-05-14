@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<title>Jenna Hamlin</title>
+	<title>Jenna Hamlin - About</title>
 	<link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
 	<meta http-equiv="pragma" content="no-cache" />
 	<meta name="robots" content="all" />
@@ -11,39 +11,85 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->	
+	<![endif]-->
+	<link href="font-styles.css" rel="stylesheet">
+
 	<style>
-		* { padding: 0; margin: 0; }
-		body { background-color:white; }
-		p { color: #808080; font-family: Helvetica; font-size: 22px; line-height: 24px; margin-bottom: 22px; -webkit-font-smoothing: antialiased; }
-		a { color: #000000 ; font-weight: bold; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3); }
-		a:hover { color: #990000; border-bottom: 1px solid rgba(255,255,255,1); }
-		#about { width: 360px; padding: 0 0 0 150px; margin: -35px 50px 0 auto !important; }
-		@media (max-width: 767px) {
-			#about { position: relative; width: auto; padding: 20px; margin: 0 !important; }
-			background-image { opacity: 0.2; }
+	* { padding: 0; margin: 0; }
+	body { background-color: #000; }
+
+	.img {
+		position: fixed;
+		top: 0;
+		left: 0px;
+		width: 50%;
+		height: 100%;
+		z-index: 1;
+		background: url(Reference.phylogeny.png) no-repeat center center;
+		background-size: cover;
+	}
+	p {
+		color: #808080;
+		font-family: Helvetica;
+		font-size: 22px;
+		line-height: 24px;
+		margin-bottom: 22px;
+		-webkit-font-smoothing: antialiased;
+		z-index: 2;
+	}
+	a { color: #fff; text-decoration: none; padding-bottom: 2px; border-bottom: 1px solid rgba(255,255,255,0.3); }
+	a:hover { border-bottom: 1px solid rgba(255,255,255,1); }
+
+	.outer {
+  	display: table;
+  	position: absolute;
+  	height: 100%;
+  	width: 50%;
+  	z-index: 2;
+  	margin-left: 50%;
+	}
+	.middle {
+	  display: table-cell;
+	  vertical-align: middle;
+	}
+	.inner {
+	  margin-left: auto;
+	  margin-right: auto;
+	  width: 80%;
+	}
+
+	@media (max-width: 767px) {
+		h1 { font-size: 24px; line-height: 34px; }
+		p { font-size: 18px; line-height: 28px; text-align: left; }
+		.img {
+			width: 20%;
 		}
+		.outer {
+			width: 80%;
+			margin-left: 20%;
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+	}
 
 	</style>
-</head>	
-    
+
 <body>
 
-<!-- swap out for information about yourself -->
-
-<div id="about">
-	<br><br><br>	
-	<p> <b>Jenna Hamlin </b> is an evolutionary geneticist whose interests include comparative genomics, population genetics, sex and asex, speciation, and hybridization with respect to single and multi-ceullular organisms. Her work now is solely computationally based but she has spent bench-time narrowing genomic regions of interest in tomatoes.</p>
-	<p> Currently, she is working as a Post-Doctoral Researcher in the <a href="https://bensassonlab.wordpress.com/">Bensassson Lab</a> located in Athens, GA. You can find links to her associated publications at <a href="https://scholar.google.com/citations?user=OIIf5T4AAAAJ&hl=en">Google Scholar.</a> </p>
-	<p> She can also be found commenting on science, healthcare, and re-tweeting animal pics on <a href="https://twitter.com/jenna_hamlin?lang=en">Twitter.</a> </p>
+<div class="img">
+	&nbsp;
 </div>
 
-<div>
-
-<div id="phylogeny">
-	<img src="Reference.phylogeny.png" />
+<div class="outer">
+  <div class="middle">
+    <div class="inner">
+	    <p><b>Jenna Hamlin </b> is an evolutionary geneticist whose interests include comparative genomics, population genetics, sex and asex, speciation, and hybridization with respect to single and multi-ceullular organisms. Her work now is solely computationally based but she has spent bench-time narrowing genomic regions of interest in tomatoes.</p>
+	    <p>Currently, she is working as a Post-Doctoral Researcher in the <a href="https://bensassonlab.wordpress.com/">Bensassson Lab</a> located in Athens, GA. You can find links to her associated publications at <a href="https://scholar.google.com/citations?user=OIIf5T4AAAAJ&hl=en">Google Scholar.</a></p>
+	    <p>   She can also be found commenting on science, healthcare, and re-tweeting animal pics on <a href="https://twitter.com/jenna_hamlin?lang=en">Twitter.</a></p>     
+    </div>
+  </div>
 </div>
 
-<!-- this web site is based on original material found here https://github.com/weightshift/The-Personal-Page -->
-</body>	
+</body>
 </html>
+
